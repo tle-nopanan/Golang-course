@@ -17,7 +17,7 @@ func loop() {
 
 func deferloop() {
 	for j := 0; j < 10; j++ {
-		fmt.Println("j = ", j)
+		defer fmt.Println("j = ", j)
 	}
 }
 
